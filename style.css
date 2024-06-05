@@ -1,4 +1,4 @@
-header{
+.nav-container{
     padding: 1rem;
     display: grid;
     grid-template-columns: 90fr 10fr;
@@ -8,12 +8,12 @@ header{
     height: 5px;
     width: 40px;
     background-color: blue;
-    margin-bottom: .5rem;
+    margin: .5rem;
     border-radius: 50px;
 }
 
-.hamburger:hover{
-    background-color: red;
+header {
+    background-color: white;
 }
 
 .card-1{
@@ -21,6 +21,10 @@ header{
     height: 300px;
     background-size: cover;
     position: relative;
+}
+
+.invisible{
+    display: none;
 }
 
 .card-1 h1{
@@ -34,6 +38,7 @@ header{
     bottom: 3rem;
 }
 
+
 .card-1 a {
     position: absolute;
     bottom: 1.5rem;
@@ -45,6 +50,35 @@ header{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+}
+
+header{
+    position: relative;
+}
+
+.menu {
+    text-align: center;
+    background-color: #210F89;
+    width: 100%;
+    padding: 1rem;
+    font-size: 20px;
+    line-height: 50px;
+    position: absolute;
+    z-index: 1;
+    height: 270px;
+}
+
+.menu-animation{
+    animation-name: drop;
+    animation-duration: 4s;
+}
+
+
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card-2{
@@ -83,6 +117,13 @@ h2{
 
 button{
     margin: 1.5rem 0;
+}
+
+
+.more-info{
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .circle{
@@ -180,6 +221,27 @@ footer{
         display: flex;
         flex-wrap: wrap;
     }
+
+    .invisible{
+        display: none;
+    }
+
+    .more-info a {
+        text-decoration: none;
+        color: #210F89;
+    }
+    
+    .more-info {
+        padding: .5rem!important;
+        position: absolute;
+        bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        border: 2px solid #210F89;
+    }
 }
 
 @media (min-width: 1200px){
@@ -192,27 +254,284 @@ footer{
         font-size: 50px;
         bottom: 6rem
     }
+    
+        .container{
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            margin-bottom: 3rem;
+        }
+    
+        main h2{
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+    
+        .team h2{
+            padding-top: 3rem;
+        }
+    
+        .container-team{
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 
     .card-1 a {
         bottom: 3rem;
     }
 
-    .container{
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-        margin-bottom: 3rem;
+/* Cultural translation */
+
+
+.culturalmain .info, .main-infopage .info {
+    bottom: 2rem;
+    text-align: center;
+    padding: 0rem 2rem 1rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.culturalmain p, .main-infopage p{
+    bottom: 2rem;
+    padding: 0rem 2rem 1rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    color: rgb(55, 55, 55);
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.culturalmain img, .main-infopage img{
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+.image_2{
+    background-image: url(img/problemSolving.png);
+ }
+
+.image_Technical_Support {
+    background-image: url(img/CAD.png);
+}
+
+ .image_Technical_Support_1 {
+    background-image: url(img/materials.png);
+ }
+
+ .image_comm_1 {
+    background-image: url(img/sourcing.png);
+    background-position: center;
+ }
+
+.image_technical_support_2 {
+    background-image: url(img/inspections.png);
+    background-size: contain;
+    height: 20rem;
+}
+
+.image_circum_1 {
+    background-image: url(img/SupplyChain.png);
+}
+
+.image_circum_2 {
+    background-image: url(img/Factory.png);
+}
+
+ .image_2,.image_comm_1 ,.image_Technical_Support, .image_Technical_Support_1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+ }
+
+ .image_circum_1, .image_circum_2 {
+    background-size: cover;
+    height: 20rem;
+    background-position: center;
+ }
+
+.image{
+    background-image: url(img/rightUnderstanding.png);
+    height: 20rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container_info img {
+    width: 80%;
+}
+
+
+#circum_p {
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 700px){
+    .headerImg{
+        width: 100%;
     }
 
     main h2{
-        margin-top: 3rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
 
-    .team h2{
-        padding-top: 3rem;
+   .info_cultural, .info_technical {
+        background-color: #210F89;
+   }
+
+   .image_circum_1, .image_circum_2 {
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+ }
+
+   .info_technical_2 {
+        background-color: #391BEF;
+        color: white!important;
+   }
+
+   .info{
+        padding-bottom: 2rem!important;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+   }
+
+   .info_cultural p, .info_cultural h3, .info_technical p, .info_technical h3, .info_technical_2 p {
+        color: white;
+   }
+
+   .info_cultural p, .info_2_cultural p, .info_technical p {
+        font-size: 14px;
+   }
+
+   .image, .image_2 {
+        background-size: cover;
+   }
+
+   .culturalmain p, .culturalmain h3, .main-infopage p, .main-infopage h3 {
+        padding: .5rem 2rem;
     }
 
-    .container-team{
-        width: 80vw;
+    .culturalmain h3, .main-infopage h3{
+        padding-top: 2rem!important;
+    }
+
+    .container-culturalinfo, .container-infopage{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;     
+    }
+
+   .container_info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+   }
+
+   .container_info h3 {
+        padding-top: 1rem;
+   }
+
+   .info_2_cultural {
+        grid-column: 2;
+   }
+
+   .info_technical_2 {
+        grid-column: 2;
+   }
+
+   .image_2 {
+        grid-column: 1;
+        grid-row: 1;
+   }
+
+   .image_Technical_Support_1 {
+        grid-column: 1;
+        grid-row: 1;
+   }
+
+   .image_circum_2 {
+        grid-column: 1;
+        grid-row: 1;
+   }
+
+   .info_commercial_2 {
+        grid-column: 1/3;
+        padding-bottom: 9rem;
+        background-color: white;
+   }
+
+}
+
+@media (min-width: 1200px) {
+    .headerImg{
+        width: 85%;
+    }
+
+    .info{
+        width: 50%;
+   }
+
+   .header-culturalinfo h2, .title_infopage h2{
+        margin-top: 0rem;
+   }
+
+   .header-culturalinfo, .title_infopage {
+        background-color: white;
+   }
+
+   .info_technical_2 {
+        background-color: #391BEF;
+   }
+
+   .container-culturalinfo, .container-infopage {
+        width: 85%;
+   }
+
+   .culturalbody, .Technicalbody  {
+        background-color: rgb(212, 212, 212);
+   }
+
+   .info_2_cultural {
+        background-color: white;
+   }
+
+   .image_technical_support_2 {
+    background-size: cover;
+   }
+
+   .info_technical_3 {
+    padding-bottom: 3rem;
+   }
+
+   .info_technical_3, .info_circum_2 {
+        background-color: white;
+   }
+
+   .image_circum_2 {
+        background-position: center;
+   }
+}
+
+@media (min-width: 1500px){
+    .container-culturalinfo, .headerImg, .container-infopage {
+        width: 70%;
+    }
+
+    .culturalnav, header {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .culturalfooter, footer {
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
