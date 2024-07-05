@@ -10,39 +10,120 @@
     background-color: blue;
     margin: .5rem;
     border-radius: 50px;
-}
+} 
 
 header {
     background-color: white;
 }
 
-.card-1{
-    background-image: url(img/bg.jpeg);
-    height: 300px;
-    background-size: cover;
-    position: relative;
+/* Carousel */
+
+.slider {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
 }
+
+.control-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgba(0,0,0,0.3);
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.slide {
+  min-width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  border-right: 1px solid #ccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide1 {
+  background-color: #444;
+  background-image: url(WSpictures/handshake.jpg);
+}
+
+.slide2 {
+  background-image: url(WSpictures/Inspection.JPG);
+}
+
+.slide3 {
+  background-color: #444;
+  background-image: url(WSpictures/lookingatblocksFP.jpg);
+}
+
+.slide4 {
+  background-image: url(WSpictures/problemsolving.jpg);
+}
+
+.slide5 {
+  background-color: #444;
+  background-image: url(WSpictures/wembleystepsFP.jpg);
+}
+
+.slide6 {
+  background-image: url(WSpictures/negotiateFP.jpg);
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/*_________*/
+
 
 .invisible{
     display: none;
 }
 
-.card-1 h1{
-    padding: 2rem;
-    font-size: 34px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    line-height: 2.5rem;
+.card-1{
     position: absolute;
-    bottom: 3rem;
+    bottom: 14rem;
+    padding: 1rem 1rem;
+    color: white;
+    text-align: center;
+    width: 85vw;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.card-1 h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.card-1 p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
 
 .card-1 a {
-    position: absolute;
-    bottom: 1.5rem;
-    left: 2rem;
     color: white;
     background-image: linear-gradient(#210F89,#391BEF);
     border-radius: 50px;
@@ -113,6 +194,10 @@ h2{
 
 .card-2 li{
     padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-style: italic;
+    color: #444;
 }
 
 button{
@@ -124,6 +209,16 @@ button{
     width: 50px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 1.5rem;
+    margin-top: .5rem;
+}
+
+.more-info a {
+    text-decoration: none;
+    color: #210F89;
+    border: 1.5px solid #210F89;
+    padding: .3rem;
+    font-style: normal;
 }
 
 .circle{
@@ -179,7 +274,6 @@ button{
 }
 
 .team-member p{
-    color: black;
     font-size: 16px;
     font-weight: 200;
     margin-top: 9px;
@@ -207,15 +301,35 @@ footer{
     padding-top: 2rem;
 }
 
+.extra-info {
+    height: 0vh;
+    overflow:hidden;
+}
+
+.team-member:hover .extra-info {
+    height: 10vh;
+    transition: height 1s;
+}
+
 @media (min-width: 700px){
+
+    /* Carousel */
+    
+    .slide {
+        height: 100vh;
+    }
+
+    
+    /*_________*/
+
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
     .card-2 ul{
-        height: 16.5rem;
-    }
+      height: 11.5rem;
+    } 
 
     .container-team{
         display: flex;
@@ -240,7 +354,6 @@ footer{
         left: 0;
         right: 0;
         text-align: center;
-        border: 2px solid #210F89;
     }
 }
 

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="../style.css">
-    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>ISUP</title>
 </head>
 <body>
@@ -42,11 +42,28 @@
     </header>
 
     <main>
-        <div class="card-1">
-            <h1>Integrated Services for Urban Projects</h1>
-            <a href="">ABOUT US</a>
+
+        <div class="slider-container">
+            <button class="control-btn" id="prevBtn">&#9664;</button>
+                <div class="slider" id="slider">
+                      <div class="slide slide1"></div>
+                      <div class="slide slide2"></div>
+                      <div class="slide slide3"></div>
+                      <div class="slide slide4"></div>
+                      <div class="slide slide5"></div>
+                      <div class="slide slide6"></div>
+                </div>
+                <div class="card-1">
+                    <h1>Integrated Services for Urban Projects</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                    <a href="" class="about-us">About us</a>
+                </div>
+            <button class="control-btn" id="nextBtn">&#9654;</button>
         </div>
-            <h2>Our services</h2>
+
+        
+
+        <h2>Our services</h2>
         <div class="container">
             <div class="card-2">    
                 <ul>
@@ -54,8 +71,7 @@
                         <img src="img/online-translator.png" alt="cultural-translation" width="30px">
                     </div>
                     <h3>Cultural translation</h3>
-                    <li class="first-li">Right understanding</li>
-                    <li>Problem solving</li>
+                    <li class="first-li">Being active in China…</li>
                     <li class="more-info"><a href="cultural.html">More</a></li>
                 </ul>
             </div>
@@ -66,10 +82,7 @@
                         <img src="img/online-translator.png" alt="cultural-translation" width="30px">
                     </div>
                     <h3>Technical Support</h3>
-                    <li class="first-li">CAD service</li>
-                    <li>Alternative materials</li>
-                    <li>Production follow-up</li>
-                    <li>Quality Inspections</li>
+                    <li class="first-li">ISUP supports customers all the way… </li>
                     <li class="more-info"><a href="technical.html">More</a></li>
                 </ul>
             </div>
@@ -80,8 +93,7 @@
                         <img src="img/online-translator.png" alt="cultural-translation" width="30px">
                     </div>
                     <h3>Assessing Circumstances</h3>
-                    <li class="first-li">Supply Chain Mapping</li>
-                    <li>Factory audits</li>
+                    <li class="first-li">Supplier Audits: Knowing what’s really going on!</li>
                     <li class="more-info"><a href="circumstances.html">More</a></li>
                 </ul>
             </div>
@@ -92,7 +104,7 @@
                         <img src="img/online-translator.png" alt="cultural-translation" width="30px">
                     </div>
                     <h3>Commercial Service</h3>
-                    <li class="first-li">Sourcing</li>
+                    <li class="first-li">China is so much more then stone. Get the maximum out of your business with China</li>
                     <li class="more-info"><a href="commercial.html">More</a></li>
                 </ul>
             </div>
@@ -102,50 +114,60 @@
             <h2>Meet the team</h2>  
             <div class="container-team">
                 <div class="team-member">
-                    <img src="img/Karelp.jpg" alt="karel">
+                    <img src="img/Karelp.jpg" class="team_picture" alt="karel">
                     <h3 class="member-name">KAREL PERRIENS</h3>
                     <h4 class="member-function">Founder and Partner in ISUP</h4>
-                    <P>30 years in Stone Industry</P>
-                    <P>25 years in Import/Export form Asia</P>
-                    <P>Responsible for general management of ISUP</P>
+                    <div class="extra-info">
+                        <P>30 years in Stone Industry</P>
+                        <P>25 years in Import/Export form Asia</P>
+                        <P>Responsible for general management of ISUP</P>
+                    </div>
                 </div>
 
                 <div class="team-member">
-                    <img src="img/Helen.jpg" alt="Helen">
+                    <img src="img/Helen.jpg" class="team_picture" alt="Helen">
                     <h3 class="member-name">WU HELEN</h3>
                     <h4 class="member-function">Management assistant</h4>
-                    <P>She has 20 years of experience and is parter in ISUP</P>
-                    <P>Helen speaks the local language of the Xiamen area</P>
-                    <P>She communicates with the suppliers</P>
+                    <div class="extra-info">
+                        <div>She has 20 years of experience and is parter in ISUP</div>
+                        <div>Helen speaks the local language of the Xiamen area</div>
+                        <div>She communicates with the suppliers</div>
+                    </div>
                 </div>
 
                 <div class="team-member">
                     <img src="img/Mojon.jpg" alt="XU">
                     <h3 class="member-name">XU MOJON</h3>
                     <h4 class="member-function">Project engineer and Partner in ISUP</h4>
-                    <P>Team member for 7 years</P>
-                    <P>Worked on numerous projects to UK</P>
-                    <P>Holder of certified license as a safety engineer class</P>
+                    <div class="extra-info">
+                        <P>Team member for 7 years</P>
+                        <P>Worked on numerous projects to UK</P>
+                        <P>Holder of certified license as a safety engineer class</P>
+                    </div>
                 </div>
 
                 <div class="team-member">
                     <img src="img/Wenwue.jpg" alt="XU">
                     <h3 class="member-name">XU WENWUE</h3>
                     <h4 class="member-function">Senior Inspector</h4>
-                    <P>25 years in the Stone Industry</P>
-                    <P>He started his career at Best Cheer and joined the team in 2006</P>
+                    <div class="extra-info">
+                        <P>25 years in the Stone Industry</P>
+                        <P>He started his career at Best Cheer and joined the team in 2006</P>
+                    </div>
                 </div>
 
                 <div class="team-member">
                     <img src="img/Wenwue.jpg" alt="XU">
                     <h3 class="member-name">LIU ADI</h3>
-                    <p>Adi studied law at the University of Hangzhou</p>
-                    <P>He received additional training for social auditing</P> 
-                    <P>and performed
-                        many audits with the ETI-base code as a standard 
-                    </P>
-                    <P>Adi advises in supply chain conflicts </P>
-                    <p>Adi joined the team in 2019</p>
+                    <div class="extra-info">
+                        <p>Adi studied law at the University of Hangzhou</p>
+                        <P>He received additional training for social auditing</P> 
+                        <P>and performed
+                            many audits with the ETI-base code as a standard 
+                        </P>
+                        <P>Adi advises in supply chain conflicts </P>
+                        <p>Adi joined the team in 2019</p>
+                    </div>
                 </div>
             </div>    
         </div>
